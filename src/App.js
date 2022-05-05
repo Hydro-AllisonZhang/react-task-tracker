@@ -61,7 +61,7 @@ function App() {
     return data;
   };
 
-  //tootle reminder
+  //toogle reminder
   const toggleReminder = async (id) => {
     const taskToToggle = await fetchTask(id);
     const updTask = { ...taskToToggle, reminder: !taskToToggle.reminder };

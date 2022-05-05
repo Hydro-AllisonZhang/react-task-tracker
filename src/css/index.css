@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border m-0 p-0
+  /* box-sizing: border-box;
+  margin: 0;
+  padding: 0; */;
+}
+
+body {
+  @apply font-serif
+  /* font-family: "Poppins", sans-serif; */;
+}
+h1 {
+  @apply text-3xl;
+}
+h2 {
+  @apply text-xl;
+}
+h3 {
+  @apply text-base;
+}
+
+.container {
+  @apply max-w-lg my-8 mx-auto overflow-auto min-h-fit border border-solid border-blue p-7 rounded-md 
+  /* max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid #4682b4;
+  padding: 30px;
+  border-radius: 5px; */;
+}
+
+.header {
+  @apply flex justify-between items-center mb-5
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; */;
+}
+
+.btn {
+  @apply inline-block bg-black text-white border-none px-5 py-3 m-1 rounded cursor-pointer text-base focus:outline-none
+  /* display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+  font-size: 15px;
+  font-family: inherit; */;
+  text-decoration: none;
+}
+
+/* .btn:focus {
+  outline: none;
+} */
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  @apply block w-full
+  /* display: block;
+  width: 100%; */;
+}
+
+.task {
+  @apply bg-grey m-1.5 py-2 px-5 cursor-pointer
+  /* background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer; */;
+}
+
+.task.reminder {
+  @apply border-l-4 border-solid border-l-green
+  /* border-left: 5px solid green; */;
+}
+
+.task h3 {
+  @apply flex items-center justify-between
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */;
+}
+
+.add-form {
+  @apply mb-10
+  /* margin-bottom: 40px; */;
+}
+
+.form-control {
+  @apply my-5
+  /* margin: 20px 0; */;
+}
+
+.form-control label {
+  @apply block
+  /* display: block; */;
+}
+
+.form-control input {
+  @apply w-full h-10 m-1 py-1 px-2 text-sm border rounded-md 
+  /* width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px; */;
+}
+
+.form-control-check {
+  @apply flex items-center justify-between
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between;*/;
+}
+
+.form-control-check label {
+  @apply flex-1/* flex: 1; */;
+}
+
+.form-control-check input {
+  @apply h-5 flex-2
+  /* flex: 2;
+  height: 20px; */;
+}
+
+footer {
+  @apply mt-7 text-center
+  /* margin-top: 30px;
+  text-align: center; */;
+}
